@@ -7,12 +7,12 @@
   <title>Griha Purna – Seasonal Multigrain Atta</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
-  <!-- Tailwind CSS CDN -->
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Tailwind Theme Config -->
+  <!-- Tailwind Theme -->
   <script>
     tailwind.config = {
       theme: {
@@ -22,9 +22,9 @@
             body: ['Inter', 'sans-serif'],
           },
           colors: {
-            primary: '#2F5F47',
-            secondary: '#7A4B2F',
-            background: '#F3E6D9'
+            cream: '#F3E6D9',
+            green: '#2F5F47',
+            brown: '#7A4B2F'
           }
         }
       }
@@ -32,84 +32,142 @@
   </script>
 </head>
 
-<body class="font-body bg-background text-gray-800">
+<body class="bg-cream font-body text-gray-800">
 
-  <!-- NAVBAR -->
-  <header class="bg-white shadow-sm">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-      <div class="text-2xl font-heading font-bold text-primary">
+  <!-- HEADER -->
+  <header class="border-b border-black/10">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <div class="font-heading text-2xl text-green font-semibold">
         Griha Purna
       </div>
 
-      <nav class="hidden md:flex space-x-8 font-medium">
-        <a href="index.html" class="text-primary">Home</a>
-        <a href="shop.html" class="hover:text-primary">Shop</a>
-        <a href="about.html" class="hover:text-primary">About</a>
-        <a href="contact.html" class="hover:text-primary">Contact</a>
+      <nav class="hidden md:flex space-x-10 text-sm">
+        <a href="index.html" class="text-green">Home</a>
+        <a href="shop.html" class="hover:text-green">Shop</a>
+        <a href="about.html" class="hover:text-green">About</a>
+        <a href="contact.html" class="hover:text-green">Contact</a>
       </nav>
     </div>
   </header>
 
   <!-- HERO -->
-  <section class="relative min-h-[85vh] flex items-center justify-center bg-cover bg-center"
-    style="background-image:url('https://images.unsplash.com/photo-1625246333195-78d9c38ad449');">
+  <section class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
 
-    <div class="absolute inset-0 bg-black/40"></div>
+    <!-- Image Left -->
+    <div>
+      <img 
+        src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d"
+        alt="Seasonal grains"
+        class="rounded-xl shadow-md"
+      />
+    </div>
 
-    <div class="relative z-10 bg-white/95 p-8 md:p-10 rounded-2xl shadow-xl max-w-xl text-center">
-      <p class="text-sm uppercase tracking-wide text-secondary mb-3">
-        Seasonal Nutrition for Indian Homes
-      </p>
-
-      <h1 class="font-heading text-3xl md:text-4xl font-bold text-primary mb-4">
+    <!-- Text Right -->
+    <div>
+      <h1 class="font-heading text-4xl md:text-5xl text-green mb-6 leading-tight">
         Seasonal Multigrain Atta
       </h1>
 
-      <p class="mb-6">
-        A home isn’t complete without good health. Crafted with seasonal grain combinations
-        for everyday family wellness.
+      <p class="text-lg mb-6">
+        A home isn’t complete without good health.  
+        Griha Purna brings you multigrain atta crafted with
+        **season-specific grains**, inspired by traditional wisdom
+        and modern nutrition.
       </p>
 
       <a href="shop.html"
-        class="inline-block bg-primary text-white px-6 py-3 rounded-full hover:bg-secondary transition">
-        Explore Products
+        class="inline-block border border-brown text-brown px-6 py-3 rounded-full hover:bg-brown hover:text-white transition">
+        Explore Seasonal Blends
       </a>
     </div>
   </section>
 
-  <!-- HOW IT WORKS -->
-  <section class="bg-white py-16">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="font-heading text-3xl text-center text-primary mb-12">
-        How Seasonal Nutrition Works
+  <!-- SEASONAL CONCEPT -->
+  <section class="bg-white py-20">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+
+      <h2 class="font-heading text-3xl text-green mb-6">
+        Why Seasonal Nutrition Matters
       </h2>
 
-      <div class="grid md:grid-cols-3 gap-10 text-center">
-        <div>
-          <div class="text-4xl mb-4">🌾</div>
-          <h3 class="font-heading text-xl mb-2">Season-Based Grains</h3>
-          <p>Grains selected based on your body’s seasonal needs.</p>
+      <p class="max-w-3xl mx-auto text-gray-700 leading-relaxed">
+        Our bodies respond differently in each season.
+        Just like nature changes, our food should too.
+        Griha Purna follows the principle of seasonal balance —
+        selecting grains that support digestion, energy,
+        and overall wellness throughout the year.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- PRODUCTS PREVIEW -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <h2 class="font-heading text-3xl text-green text-center mb-12">
+        Our Offerings
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-12">
+
+        <!-- 1KG -->
+        <div class="bg-white p-8 rounded-xl shadow-sm">
+          <h3 class="font-heading text-2xl text-green mb-3">
+            1 KG Trial Pack
+          </h3>
+          <p class="mb-4">
+            Experience seasonal nutrition for your family.
+          </p>
+          <span class="text-sm text-brown block mb-6">
+            ✓ 100% Money Back Guarantee (10 min)
+          </span>
+
+          <a href="contact.html"
+            class="border border-green text-green px-5 py-2 rounded-full hover:bg-green hover:text-white transition">
+            Order on WhatsApp
+          </a>
         </div>
 
-        <div>
-          <div class="text-4xl mb-4">🫓</div>
-          <h3 class="font-heading text-xl mb-2">Better Digestion</h3>
-          <p>Balanced blends for gut health and energy.</p>
+        <!-- 5KG -->
+        <div class="bg-white p-8 rounded-xl shadow-sm">
+          <h3 class="font-heading text-2xl text-green mb-3">
+            5 KG Family Pack
+          </h3>
+          <p class="mb-4">
+            Ideal for everyday home cooking.
+          </p>
+          <span class="text-sm text-brown block mb-6">
+            ⭐ Subscription Offer – 5% off for 1 year
+          </span>
+
+          <a href="contact.html"
+            class="border border-green text-green px-5 py-2 rounded-full hover:bg-green hover:text-white transition">
+            Order on WhatsApp
+          </a>
         </div>
 
-        <div>
-          <div class="text-4xl mb-4">❤️</div>
-          <h3 class="font-heading text-xl mb-2">Family Wellness</h3>
-          <p>Nourishment suitable for all age groups.</p>
-        </div>
       </div>
     </div>
   </section>
 
+  <!-- FOOTER -->
+  <footer class="border-t border-black/10 py-10 text-center text-sm">
+    <p class="mb-2 font-heading text-green">
+      Griha Purna
+    </p>
+    <p class="mb-4">
+      A home isn’t complete without good health.
+    </p>
+    <p class="text-gray-600">
+      Instagram • WhatsApp
+    </p>
+  </footer>
+
   <!-- WHATSAPP BUTTON -->
   <a href="https://wa.me/+91XXXXXXXXXX"
      target="_blank"
-     class="fixed bottom-6 right-6 bg-green-500 text-white px-5 py-3 rounded-full shadow-lg hover:bg-green-600">
+     class="fixed bottom-6 right-6 bg-green-600 text-white px-5 py-3 rounded-full shadow-lg hover:bg-green-700">
     WhatsApp
   </a>
 
