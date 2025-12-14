@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Shop – Griha Purna</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Theme -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            heading: ['Playfair Display', 'serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            cream: '#F3E6D9',
+            green: '#2F5F47',
+            brown: '#7A4B2F'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-cream font-body text-gray-800">
+
+  <!-- HEADER -->
+  <header class="border-b border-black/10">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <div class="font-heading text-2xl text-green font-semibold">
+        Griha Purna
+      </div>
+
+      <nav class="hidden md:flex space-x-10 text-sm">
+        <a href="index.html" class="hover:text-green">Home</a>
+        <a href="shop.html" class="text-green">Shop</a>
+        <a href="about.html" class="hover:text-green">About</a>
+        <a href="contact.html" class="hover:text-green">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- INTRO -->
+  <section class="max-w-5xl mx-auto px-6 py-20 text-center">
+    <h1 class="font-heading text-4xl text-green mb-4">
+      Seasonal Atta Offerings
+    </h1>
+    <p class="max-w-2xl mx-auto text-lg text-gray-700">
+      Each blend is thoughtfully crafted to support your body’s
+      nutritional needs through changing seasons.
+    </p>
+  </section>
+
+  <!-- PRODUCT 1 -->
+  <section class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center bg-white rounded-2xl mb-20">
+
+    <div>
+      <img 
+        src="images/pack-1kg.jpg"
+        alt="1 KG Trial Pack"
+        class="rounded-xl shadow-sm"
+      />
+    </div>
+
+    <div>
+      <h2 class="font-heading text-3xl text-green mb-4">
+        1 KG Trial Pack
+      </h2>
+
+      <p class="mb-4 text-gray-700">
+        A perfect introduction to seasonal multigrain nutrition.
+        Ideal for families who want to experience the taste,
+        digestion, and overall feel before committing long-term.
+      </p>
+
+      <p class="text-brown mb-6">
+        ✓ 100% Money Back Guarantee  
+        <br />
+        <span class="text-sm">(Not satisfied? Return within 10 min)</span>
+      </p>
+
+      <a href="https://wa.me/+91XXXXXXXXXX"
+         target="_blank"
+         class="inline-block border border-green text-green px-6 py-3 rounded-full hover:bg-green hover:text-white transition">
+        Order on WhatsApp
+      </a>
+    </div>
+
+  </section>
+
+  <!-- PRODUCT 2 -->
+  <section class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center bg-white rounded-2xl">
+
+    <div class="md:order-2">
+      <img 
+        src="images/pack-5kg.jpg"
+        alt="5 KG Family Pack"
+        class="rounded-xl shadow-sm"
+      />
+    </div>
+
+    <div class="md:order-1">
+      <h2 class="font-heading text-3xl text-green mb-4">
+        5 KG Family Pack
+      </h2>
+
+      <p class="mb-4 text-gray-700">
+        Designed for everyday home cooking, this pack ensures
+        consistent seasonal nutrition for the entire family.
+        A wholesome choice for long-term wellness.
+      </p>
+
+      <p class="text-brown mb-6">
+        ⭐ Subscription Offer  
+        <br />
+        <span class="text-sm">Get 5% off for 1 year</span>
+      </p>
+
+      <a href="https://wa.me/+91XXXXXXXXXX"
+         target="_blank"
+         class="inline-block border border-green text-green px-6 py-3 rounded-full hover:bg-green hover:text-white transition">
+        Order on WhatsApp
+      </a>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-black/10 py-12 mt-20 text-center text-sm">
+    <p class="font-heading text-green mb-2">
+      Griha Purna
+    </p>
+    <p class="mb-4">
+      A home isn’t complete without good health.
+    </p>
+    <p class="text-gray-600">
+      Instagram • WhatsApp
+    </p>
+  </footer>
+
+  <!-- WHATSAPP BUTTON -->
+  <a href="https://wa.me/+91XXXXXXXXXX"
+     target="_blank"
+     class="fixed bottom-6 right-6 bg-green-600 text-white px-5 py-3 rounded-full shadow-lg hover:bg-green-700">
+    WhatsApp
+  </a>
+
+</body>
+</html>
